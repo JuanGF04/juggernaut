@@ -7,23 +7,45 @@
 
 @include("layouts.code.header")
 @yield("header")
-
+		<?php
+			session_start();
+		?>
 		<nav>
-			<div class="activo">Inicio</div>
-			<a href="http://localhost/juggernaut/public/eventos"><div>Eventos</div></a>
-			<a href="http://localhost/juggernaut/public/rankings"><div>Rankings</div></a>
-			<a href="http://localhost/juggernaut/public/tienda"><div>Juegos</div></a>
-			<a href="http://localhost/juggernaut/public/foros"><div>Foros</div></a>
-			<a href="login.html"><div class="float_der">Iniciar sesión</div></a>
+			<div class="activo seccion">Inicio</div>
+			<a href="http://localhost/juggernaut/public/eventos"><div class="seccion">Eventos</div></a>
+			<a href="http://localhost/juggernaut/public/rankings"><div class="seccion">Rankings</div></a>
+			<a href="http://localhost/juggernaut/public/tienda"><div class="seccion">Tienda</div></a>
+			<a href="http://localhost/juggernaut/public/foros"><div class="seccion">Foros</div></a>
+			<!--<a href="login.html"><div class="float_der">Iniciar sesión</div></a>-->
+			@include("layouts.code.cuadroLogin")
+			@yield("cuadroLogin")
 		</nav>
 
 		<div class="main">
+			<?php
+				if(isset($_SESSION['logueado'])){
+					if ($_SESSION['logueado']==false){
+			?>
+			<!-- Hola soy un comentario inocente-->
+			<div>Hola que tal me van a borrar</div>
 			<div class="bienvenida">
 				<img src="img/hada.png">
 				<p><b>Saludos, jugador.<br> Bienvenido a Juggernaut, un sitio en el que podrás poner a prueba tus habilidades como jugador de videojuegos y
 				aumentar tu conocimiento sobre ellos.
 				<br> Si quieres participar en las competiciones, es necesario <a href="register.html">iniciar sesión</a>.</b></p>
 			</div>
+			<?php
+		}else{
+			echo "<div class='bienvenida'>";
+			echo "<img src='img/hada.png'>";
+			echo "Bienvenido, ".$_SESSION['nombre'];
+			echo "</div>";
+		}
+
+	}
+			 ?>
+
+
 
 			<div class="seccion1">
 				<header><span>Juego recomendado de la semana</span></header>
@@ -90,8 +112,7 @@
 			<a href="#top"><img src="img/flecha.png"></a>
 		</div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		@include("layouts.code.scripts")
+		@yield("scripts")
 	</body>
 </html>
