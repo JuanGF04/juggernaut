@@ -54,7 +54,7 @@
           ¡Email correcto!
       </div>
     </div>
-  <button class="ml-3 mt-3 btn btn-outline-primary" type="submit">Registro</button>
+  <button class="ml-3 mt-3 btn btn-outline-light" type="submit">Registro</button>
   </div>
   <script>
   // Example starter JavaScript for disabling form submissions if there are invalid fields
