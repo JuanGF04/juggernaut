@@ -3,7 +3,7 @@
   session_start();
   session_destroy();
 
-  header('Location: http://localhost/juggernaut/public/tienda');
+  header('Location: http://localhost/juggernaut/public/');
   die();
 
 ?>

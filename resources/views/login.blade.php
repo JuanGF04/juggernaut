@@ -24,13 +24,13 @@
     $_SESSION['info'] = $_SERVER['HTTP_USER_AGENT'].$_SERVER['REMOTE_ADDR'];
     $_SESSION['logueado'] = true;
 
-    header('Location: http://localhost/juggernaut/public/tienda');
+    header('Location: http://localhost/juggernaut/public/');
     die();
 
     //sino doy el error
   }else{
     $_SESSION['fallolog']=true;
-    header('Location: http://localhost/juggernaut/public/signup');
+    header('Location: http://localhost/juggernaut/public/');
     die();
   }
   }
