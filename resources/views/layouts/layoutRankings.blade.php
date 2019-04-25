@@ -9,12 +9,13 @@
     @yield("header")
 
 		<nav>
-			<a href="http://localhost/juggernaut/public/"><div>Inicio</div></a>
-			<a href="http://localhost/juggernaut/public/eventos"><div>Eventos</div></a>
-			<div class="activo">Rankings</div>
-			<a href="http://localhost/juggernaut/public/tienda"><div>Juegos</div></a>
-			<a href="http://localhost/juggernaut/public/foros"><div>Foros</div></a>
-			<a href="login.html"><div class="float_der">Iniciar sesión</div></a>
+			<a href="http://localhost/juggernaut/public/"><div class="seccion">Inicio</div></a>
+			<a href="http://localhost/juggernaut/public/eventos"><div class="seccion">Eventos</div></a>
+			<div class="activo seccion">Rankings</div>
+			<a href="http://localhost/juggernaut/public/tienda"><div class="seccion">Juegos</div></a>
+			<a href="http://localhost/juggernaut/public/foros"><div class="seccion">Foros</div></a>
+			@include("layouts.code.cuadroLogin")
+			@yield("cuadroLogin")
 		</nav>
 		<div class="main">
 
@@ -189,5 +190,9 @@
 		<div class="flecha">
 			<a href="#top"><img src="img/flecha.png"></a>
 		</div>
+
+@include("layouts.code.scripts")
+@yield("scripts")
+
 	</body>
 </html>

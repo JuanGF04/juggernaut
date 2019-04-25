@@ -16,5 +16,21 @@
       border: none;
       border-left: 1px solid black;
     }
+
+    #formReg{
+      margin-top: 5%;
+      margin-left: 35%;
+      width: 30%;
+      background-color: rgba(200,0,0,1);
+      border: 2px solid black;
+    }
+
+    #labelForm{
+      color: white;
+    }
+
+    #bienvenida{
+      font-size: 700%;
+    }
   </style>
 </head>

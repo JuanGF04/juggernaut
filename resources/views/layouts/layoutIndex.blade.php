@@ -26,8 +26,7 @@
 				if(isset($_SESSION['logueado'])){
 					if ($_SESSION['logueado']==false){
 			?>
-			<!-- Hola soy un comentario inocente-->
-			<div>Hola que tal me van a borrar</div>
+			
 			<div class="bienvenida">
 				<img src="img/hada.png">
 				<p><b>Saludos, jugador.<br> Bienvenido a Juggernaut, un sitio en el que podrás poner a prueba tus habilidades como jugador de videojuegos y
@@ -38,7 +37,7 @@
 		}else{
 			echo "<div class='bienvenida'>";
 			echo "<img src='img/hada.png'>";
-			echo "Bienvenido, ".$_SESSION['nombre'];
+			echo "<span id='bienvenida'>Bienvenido, ".$_SESSION['nombre']."</span>";
 			echo "</div>";
 		}
 

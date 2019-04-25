@@ -8,14 +8,20 @@
 @include("layouts.code.header")
 @yield("header")
 
+	<?php
+		session_start();
+	?>
     <nav>
-			<a href="http://localhost/juggernaut/public/"><div>Inicio</div></a>
-			<div class="activo">Eventos</div></a>
-			<a href="http://localhost/juggernaut/public/rankings"><div>Rankings</div></a>
-			<a href="http://localhost/juggernaut/public/tienda"><div>Juegos</div></a>
-			<a href="http://localhost/juggernaut/public/foros"><div>Foros</div></a>
-			<a href="login.html"><div class="float_der">Iniciar sesión</div></a>
+			<a href="http://localhost/juggernaut/public/"><div class="seccion">Inicio</div></a>
+			<div class="activo seccion">Eventos</div></a>
+			<a href="http://localhost/juggernaut/public/rankings"><div class="seccion">Rankings</div></a>
+			<a href="http://localhost/juggernaut/public/tienda"><div class="seccion">Tienda</div></a>
+			<a href="http://localhost/juggernaut/public/foros"><div class="seccion">Foros</div></a>
+			<!--<a href="login.html"><div class="float_der seccion">Iniciar sesión</div></a>-->
+			@include("layouts.code.cuadroLogin")
+			@yield("cuadroLogin")
 		</nav>
+
 
 		<div class="main">
 			<div class="seccion2">
@@ -77,6 +83,8 @@
 			<a href="#top"><img src="img/flecha.png"></a>
 		</div>
 
+		@include("layouts.code.scripts")
+		@yield("scripts")
 
 	</body>
 </html>
