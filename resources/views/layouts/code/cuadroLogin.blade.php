@@ -12,11 +12,11 @@
               <div class="container-fluid">
                   <form class="" method="get" action="http://localhost/juggernaut/public/login">
                       <div class="form-group">
-                        <label class="">Username</label>
+                        <label class="">Nombre de usuario</label>
                           <input class="form-control" name="username" id="username" type="text">
                       </div>
                       <div class="form-group">
-                        <label class="">Password</label>
+                        <label class="">Contraseña</label>
                           <input class="form-control" name="password" id="password" type="password">
                           <br class="">
                       </div>

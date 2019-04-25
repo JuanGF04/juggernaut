@@ -1,5 +1,5 @@
 <head>
-  <title>Juggernaut Bar</title>
+  <title>Juggernaut</title>
   <link href="style.css" rel="stylesheet" type="text/css">
   <link href="img/jugger.ico" rel="shortcut icon" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -18,7 +18,7 @@
     }
 
     #formReg{
-      margin-top: 5%;
+
       margin-left: 35%;
       width: 30%;
       background-color: rgba(200,0,0,1);
