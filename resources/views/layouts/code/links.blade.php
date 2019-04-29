@@ -18,7 +18,7 @@
     }
 
     #formReg{
-
+      margin-top: 2%;
       margin-left: 35%;
       width: 30%;
       background-color: rgba(200,0,0,1);

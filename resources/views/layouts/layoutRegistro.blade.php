@@ -4,7 +4,7 @@
 @yield("links")
 
 	<body>
-		<h1 style="font-family: graceland; margin-top:2%; margin-left:28%; color: black;">Juggernaut | Formulario de registro</h1>
+		<h1 style="font-family: graceland; color: white;">Juggernaut | Formulario de registro</h1>
 		@include("layouts.code.formulario")
 		@yield("formulario")
 
