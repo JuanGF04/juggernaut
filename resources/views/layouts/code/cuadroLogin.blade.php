@@ -30,7 +30,7 @@
                         <button type="submit" id="btnLogin" class="btn btn-danger btn-sm">Login</button>
                       </form>
                       <div class="dropdown-divider"></div>
-                      ¿No tienes una cuenta aún? <a href="http://localhost/juggernaut/public/registro">Regístrate</a>
+                      ¿No tienes una cuenta aún? <a class="text-danger" href="http://localhost/juggernaut/public/registro">Regístrate</a>
 
                 </div>
           </div>
@@ -49,10 +49,10 @@
           <div class="dropdown-menu" id="formlogin">
             <div class="row">
                 <div class="container-fluid">
-                        <a href>MI CESTA</a>
+                        <a class="text-danger" href>MI CESTA</a>
                         <div class="dropdown-divider"></div>
 
-                        <a href="http://localhost/juggernaut/public/cerrarsesion">Cerrar sesión</a>
+                        <a class="text-danger" href="http://localhost/juggernaut/public/cerrarsesion">Cerrar sesión</a>
 
                   </div>
             </div>
