@@ -98,5 +98,6 @@
 
 		@include("layouts.code.scripts")
 		@yield("scripts")
+
 	</body>
 </html>

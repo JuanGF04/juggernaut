@@ -32,5 +32,6 @@
     #bienvenida{
       font-size: 700%;
     }
+
   </style>
 </head>

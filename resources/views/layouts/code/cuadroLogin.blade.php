@@ -1,3 +1,14 @@
+<script type="text/javascript">
+// Add slideDown animation to Bootstrap dropdown when expanding.
+$('.dropdown').on('show.bs.dropdown', function() {
+$(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+});
+
+// Add slideUp animation to Bootstrap dropdown when collapsing.
+$('.dropdown').on('hide.bs.dropdown', function() {
+$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+});
+</script>
 <?php
 
   if(!isset($_SESSION['logueado']))
@@ -49,9 +60,10 @@
           <div class="dropdown-menu" id="formlogin">
             <div class="row">
                 <div class="container-fluid">
+                        <div><img width="10%" src="img/jugger.ico"></div>
                         <a class="text-danger" href>MI CESTA</a>
-                        <div class="dropdown-divider"></div>
 
+                        <div class="dropdown-divider"></div>
                         <a class="text-danger" href="http://localhost/juggernaut/public/cerrarsesion">Cerrar sesión</a>
                   </div>
             </div>
