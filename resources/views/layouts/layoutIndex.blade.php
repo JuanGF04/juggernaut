@@ -31,7 +31,7 @@
 				<img src="img/hada.png">
 				<p><b>Saludos, jugador.<br> Bienvenido a Juggernaut, un sitio en el que podrás poner a prueba tus habilidades como jugador de videojuegos y
 				aumentar tu conocimiento sobre ellos.
-				<br> Si quieres participar en las competiciones, es necesario <a href="register.html">iniciar sesión</a>.</b></p>
+				<br> Si quieres participar en las competiciones, es necesario <label style="font-size: 200%;">iniciar sesión.</label></b></p>
 			</div>
 			<?php
 		}else{

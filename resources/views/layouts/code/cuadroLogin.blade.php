@@ -53,7 +53,6 @@
                         <div class="dropdown-divider"></div>
 
                         <a class="text-danger" href="http://localhost/juggernaut/public/cerrarsesion">Cerrar sesión</a>
-
                   </div>
             </div>
           </div>
