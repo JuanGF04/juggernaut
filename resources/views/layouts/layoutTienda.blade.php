@@ -23,7 +23,7 @@
 
 
 		</nav>
-		<div class="main">
+		<div class="main" style="height: 200%;">
 			<div class="seccion2">
 			<header><span>Más populares</span></header>
 

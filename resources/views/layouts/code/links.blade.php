@@ -52,6 +52,47 @@
       height: 80%;
     }
 
+    #seccionjuego{
+      height: 70%;
+    }
+
+    #seccionjuego img{
+      float: left;
+      margin: 2%;
+      width: 30%;
+      height: 80%;
+      border: 2px solid black;
+    }
+
+    #seccionjuego #infojuego{
+          width: 60%;
+          /*border: 2px solid purple;*/
+          margin-top: 2%;
+          float:left;
+    }
+
+    #seccionjuego div h1{
+
+      margin-top: 2%;
+      float: left;
+      /*border: 2px solid blue;*/
+
+    }
+
+    #seccionjuego div h3{
+          margin-top: 0%;
+          float: left;
+          /*border: 2px solid blue;*/
+          clear:both;
+    }
+
+    #seccionjuego div p{
+      float: left;
+      clear: both;
+    }
+
+
+
 
 
   </style>

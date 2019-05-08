@@ -21,7 +21,7 @@
 			@yield("cuadroLogin")
 		</nav>
 
-		<div class="main" style= "height: 70%;">
+		<div class="main" id="seccionjuego">
 			<?php
 				if(isset($_SESSION['logueado'])){
 					if ($_SESSION['logueado']==false){
@@ -34,7 +34,7 @@
 
       	}
       	?>
-        <div id='infojuego'>
+
           <?php
             $icodgame = $_GET['icodgame'];
 
@@ -44,13 +44,22 @@
 							$id = $mostrar->icodgame;
 							$nombre = $mostrar->game_name;
 							$precio = $mostrar->precio;
+							$caratula = $mostrar->caratula;
+							$desarrollador= $mostrar->desarrollador;
 
-              echo $id.$nombre.$precio;
             }
+
+						echo "<img src='$caratula'/>";
+						echo "<div id='infojuego'>";
+						echo "<h1>".$nombre."</h1>";
+						echo "<h3>Género del juego</h3>";
+						echo "<h3>Desarrollador: ".$desarrollador."</h3> ";
+						echo "<p>Breve descripción del juego</p>";
+						echo "</div>";
 
 
            ?>
-        </div>
+
 		</div>
 
 		@include("layouts.code.footer")
