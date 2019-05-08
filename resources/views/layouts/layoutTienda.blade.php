@@ -25,7 +25,7 @@
 		</nav>
 		<div class="main" style="height: 200%;">
 			<div class="seccion2">
-			<header><span>Más populares</span></header>
+			<header><div><span>Más populares</span></div></header>
 
 
 					<?php
@@ -45,7 +45,7 @@
 
 							echo "<div id='juegoconcreto'>";
 								echo "<a href='http://localhost/juggernaut/public/juego?icodgame=$id'><img  id='imagenpopu' src='$caratula'></a>";
-								echo "<h3>".$nombre."</h3>";
+								echo "<span>".$nombre."</span>";
 								//echo "<h6>".$precio." € </h6>";
 							echo "</div>";
 
@@ -58,29 +58,8 @@
 			</div>
 
 			<div class="seccion2">
-			<header><span></span></header>
-				<table>
-					<tr>
-						<td><img src="img/juego2.jpg"><h3>Dark Souls 3</h3></td>
-						<td><img src="img/juego2.jpg"><h3>Dark Souls 3</h3></td>
-						<td><img src="img/juego2.jpg"><h3>Dark Souls 3</h3></td>
-						<td><img src="img/juego2.jpg"><h3>Dark Souls 3</h3></td>
-						<td><img src="img/juego2.jpg"><h3>Dark Souls 3</h3></td>
-						<td><img src="img/juego2.jpg"><h3>Dark Souls 3</h3></td>
-						<td><img src="img/juego2.jpg"><h3>Dark Souls 3</h3></td>
-						<td><img src="img/juego2.jpg"><h3>Dark Souls 3</h3></td>
-					</tr>
-					<tr>
-						<td><img src="img/juego2.jpg"><h3>Dark Souls 3</h3></td>
-						<td><img src="img/juego2.jpg"><h3>Dark Souls 3</h3></td>
-						<td><img src="img/juego2.jpg"><h3>Dark Souls 3</h3></td>
-						<td><img src="img/juego2.jpg"><h3>Dark Souls 3</h3></td>
-						<td><img src="img/juego2.jpg"><h3>Dark Souls 3</h3></td>
-						<td><img src="img/juego2.jpg"><h3>Dark Souls 3</h3></td>
-						<td><img src="img/juego2.jpg"><h3>Dark Souls 3</h3></td>
-						<td><img src="img/juego2.jpg"><h3>Dark Souls 3</h3></td>
-					</tr>
-				</table>
+			<header><div><span>Top Juggernaut</span><img src="img/jugger.ico"/></div></header>
+
 				<div class="pie_seccion"><a href="http://www.google.es">Ver más</a></div>
 			</div>
 
