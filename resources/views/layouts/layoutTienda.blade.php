@@ -26,49 +26,35 @@
 		<div class="main">
 			<div class="seccion2">
 			<header><span>Más populares</span></header>
-				<table>
-				<!--
+
+
 					<?php
 
-						$resultado = DB::table('games')->get();
+						$resultado = DB::table('games')->orderBy('popularidad', 'desc')->limit(10)->get();
 
-						echo "<table border='1'>";
+						//echo "<table border='1'>";
+						echo "<div id='container'>";
 
 						foreach ($resultado as $mostrar) {
 							$id = $mostrar->icodgame;
-							$nombre = $mostrar->nombre;
+							$nombre = $mostrar->game_name;
 							$precio = $mostrar->precio;
 							$caratula = $mostrar->caratula;
 							$desarrollador = $mostrar->desarrollador;
 							$popularidad = $mostrar->popularidad;
 
-						echo "<tr>
-										<td>$id</td>
-										<td>$nombre</td>
-										<td>$precio</td>
-										<td>$desarrollador</td>
-									</tr>";
+							echo "<div id='juegoconcreto'>";
+								echo "<a href='http://localhost/juggernaut/public/juego?icodgame=$id'><img  id='imagenpopu' src='$caratula'></a>";
+								echo "<h3>".$nombre."</h3>";
+								//echo "<h6>".$precio." € </h6>";
+							echo "</div>";
+
 						}
 
-						echo"</table>";
+						echo "</div>";
+						//echo"</table>";
 					?>
-				-->
-
-					<tr>
-						<td><img src="img/juego1.jpg"><h3>Fortnite</h3></td>
-						<td><img src="img/juego1_2.jpg"><h3>God of War</h3></td>
-						<td><img src="img/juego1.jpg"><h3>Fortnite</h3></td>
-						<td><img src="img/juego1.jpg"><h3>Fortnite</h3></td>
-						<td><img src="img/juego1.jpg"><h3>Fortnite</h3></td>
-					</tr>
-					<tr>
-						<td><img src="img/juego1.jpg"><h3>Fortnite</h3></td>
-						<td><img src="img/juego1.jpg"><h3>Fortnite</h3></td>
-						<td><img src="img/juego1.jpg"><h3>Fortnite</h3></td>
-						<td><img src="img/juego1.jpg"><h3>Fortnite</h3></td>
-						<td><img src="img/juego1.jpg"><h3>Fortnite</h3></td>
-					</tr>
-				</table>
+					<div class="pie_seccion"><a href="http://www.google.es">Ver más</a></div>
 			</div>
 
 			<div class="seccion2">

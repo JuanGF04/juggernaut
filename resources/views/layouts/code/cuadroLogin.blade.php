@@ -61,6 +61,16 @@ $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
             <div class="row">
                 <div class="container-fluid">
                         <div><img width="10%" src="img/jugger.ico"></div>
+                        <div id='points'>
+                          <?php
+                            $nombrecito = $_SESSION['nombre'];
+                            //PARA 1 VALOR
+                            $puntuacion = DB::table('users')->where('name', $nombrecito)->value('points');
+                            //PARA VARIOS
+                            
+                            echo $puntuacion;
+                           ?>
+                        </div>
                         <a class="text-danger" href>MI CESTA</a>
 
                         <div class="dropdown-divider"></div>

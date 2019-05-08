@@ -20,3 +20,4 @@ Route::get("/login","controllerMain@login");
 Route::get("/registro","controllerMain@registro");
 Route::get("/createuser","controllerMain@createuser");
 Route::get("/cerrarsesion","controllerMain@cerrarsesion");
+Route::get("/juego","controllerMain@juego");

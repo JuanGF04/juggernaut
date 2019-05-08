@@ -43,6 +43,10 @@ class controllerMain extends Controller
     return view ("cerrarsesion");
   }
 
+  public function juego(){
+    return view ("juego");
+  }
+
 }
 
 ?>
