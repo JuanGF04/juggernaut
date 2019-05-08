@@ -37,17 +37,28 @@
       display: inline-block;
       width: 100%;
       padding-left: 8%;
+      padding-top: 2%;
     }
+
     #juegoconcreto{
       display: inline-block;
-      margin-left: 2%;
-      width: 250px;
-      height: 9%;
+      margin-left: 1%;
+      width: 16.8em;
+      height: 15%;
     }
+
+    @media screen and (max-width:1600px) {
+      #juegoconcreto{
+        display: inline-block;
+        margin-left: 1%;
+        width: 13.5em;
+        height: 15%;
+      }
+    }
+
 
     #imagenpopu{
       margin-left: 0;
-
       width: 100%;
       height: 80%;
     }
@@ -61,7 +72,8 @@
       margin: 2%;
       width: 30%;
       height: 80%;
-      border: 2px solid black;
+      border: 10px solid transparent;
+      border-image: url(img/borde.png) 20 round;
     }
 
     #seccionjuego #infojuego{
