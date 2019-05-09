@@ -72,8 +72,8 @@
       margin: 2%;
       width: 30%;
       height: 80%;
-      border: 10px solid transparent;
-      border-image: url(img/borde.png) 20 round;
+      border: 10px groove black;
+
     }
 
     #seccionjuego #infojuego{
