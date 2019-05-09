@@ -72,11 +72,11 @@
       margin: 2%;
       width: 30%;
       height: 40%;
-      border: 10px groove black;
+      border: 5px groove black;
     }
 
     #seccionjuego video{
-      border: 5px solid RGB(200,0,0,1);
+      border: 5px groove black;
       width:85%;
       height:31%;
       float:right;

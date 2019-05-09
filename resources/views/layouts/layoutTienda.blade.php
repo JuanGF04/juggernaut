@@ -23,7 +23,7 @@
 
 
 		</nav>
-		<div class="main" style="height: 200%;">
+		<div class="main" style="height: 300%;">
 			<div class="seccion2">
 			<header><div><span>Más populares</span></div></header>
 
@@ -60,33 +60,66 @@
 			<div class="seccion2">
 			<header><div><span>Top Juggernaut</span><img src="img/jugger.ico"/></div></header>
 
+
+								<?php
+
+									$resultado = DB::table('games')->orderBy('jugg_value', 'desc')->limit(5)->get();
+
+									//echo "<table border='1'>";
+									echo "<div id='container'>";
+
+									foreach ($resultado as $mostrar) {
+										$id = $mostrar->icodgame;
+										$nombre = $mostrar->game_name;
+										$precio = $mostrar->precio;
+										$caratula = $mostrar->caratula;
+										$desarrollador = $mostrar->desarrollador;
+										$popularidad = $mostrar->popularidad;
+
+										echo "<div id='juegoconcreto'>";
+											echo "<a href='http://localhost/juggernaut/public/juego?icodgame=$id'><img  id='imagenpopu' src='$caratula'></a>";
+											echo "<span>".$nombre."</span>";
+											//echo "<h6>".$precio." € </h6>";
+										echo "</div>";
+
+									}
+
+									echo "</div>";
+									//echo"</table>";
+								?>
 				<div class="pie_seccion"><a href="http://www.google.es">Ver más</a></div>
 			</div>
 
 			<div class="seccion2">
-			<header><span>Descargables</span></header>
-				<table>
-					<tr>
-						<td><img src="img/juego3.jpg"><h3>Hexagon</h3></td>
-						<td><img src="img/juego3.jpg"><h3>Hexagon</h3></td>
-						<td><img src="img/juego3.jpg"><h3>Hexagon</h3></td>
-						<td><img src="img/juego3.jpg"><h3>Hexagon</h3></td>
-						<td><img src="img/juego3.jpg"><h3>Hexagon</h3></td>
-						<td><img src="img/juego3.jpg"><h3>Hexagon</h3></td>
-						<td><img src="img/juego3.jpg"><h3>Hexagon</h3></td>
-						<td><img src="img/juego3.jpg"><h3>Hexagon</h3></td>
-					</tr>
-					<tr>
-						<td><img src="img/juego3.jpg"><h3>Hexagon</h3></td>
-						<td><img src="img/juego3.jpg"><h3>Hexagon</h3></td>
-						<td><img src="img/juego3.jpg"><h3>Hexagon</h3></td>
-						<td><img src="img/juego3.jpg"><h3>Hexagon</h3></td>
-						<td><img src="img/juego3.jpg"><h3>Hexagon</h3></td>
-						<td><img src="img/juego3.jpg"><h3>Hexagon</h3></td>
-						<td><img src="img/juego3.jpg"><h3>Hexagon</h3></td>
-						<td><img src="img/juego3.jpg"><h3>Hexagon</h3></td>
-					</tr>
-				</table>
+			<header><div><span>Descargables</span></div></header>
+
+
+								<?php
+
+									$resultado = DB::table('games')->orderBy('popularidad', 'desc')->limit(10)->get();
+
+									//echo "<table border='1'>";
+									echo "<div id='container'>";
+
+									foreach ($resultado as $mostrar) {
+										$id = $mostrar->icodgame;
+										$nombre = $mostrar->game_name;
+										$precio = $mostrar->precio;
+										$caratula = $mostrar->caratula;
+										$desarrollador = $mostrar->desarrollador;
+										$popularidad = $mostrar->popularidad;
+
+										echo "<div id='juegoconcreto'>";
+											echo "<a href='http://localhost/juggernaut/public/juego?icodgame=$id'><img  id='imagenpopu' src='$caratula'></a>";
+											echo "<span>".$nombre."</span>";
+											//echo "<h6>".$precio." € </h6>";
+										echo "</div>";
+
+									}
+
+									echo "</div>";
+									//echo"</table>";
+								?>
 				<div class="pie_seccion"><a href="http://www.google.es">Ver más</a></div>
 			</div>
 		</div>
