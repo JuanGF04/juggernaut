@@ -64,38 +64,43 @@
     }
 
     #seccionjuego{
-      height: 70%;
+      height: 80em;
     }
 
     #seccionjuego img{
       float: left;
       margin: 2%;
       width: 30%;
-      height: 80%;
+      height: 40%;
       border: 10px groove black;
+    }
+
+    #seccionjuego video{
+      border: 5px solid RGB(200,0,0,1);
+      width:85%;
+      height:31%;
+      float:right;
 
     }
 
     #seccionjuego #infojuego{
           width: 60%;
-          /*border: 2px solid purple;*/
           margin-top: 2%;
           float:left;
     }
+
 
     #seccionjuego div h1{
 
       margin-top: 2%;
       float: left;
-      /*border: 2px solid blue;*/
 
     }
 
     #seccionjuego div h3{
-          margin-top: 0%;
-          float: left;
-          /*border: 2px solid blue;*/
-          clear:both;
+      margin-top: 0%;
+      float: left;
+      clear:both;
     }
 
     #seccionjuego div p{
