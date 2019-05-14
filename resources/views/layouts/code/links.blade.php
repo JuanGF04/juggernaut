@@ -64,19 +64,14 @@
     }
 
 
-    #seccionjuego img{
-      float: left;
-      margin: 2%;
-      width: 30rem;
-      height: 60%;
-      border: 5px groove black;
-      display: inline-block;
-    }
+
 
     #seccionjuego video{
       width:80%;
-    	height:35%;
+    	height:55%;
+      margin-left: 2%;
     }
+
 
     @media screen and (max-width:1000px) {
       #seccionjuego video{
@@ -85,12 +80,56 @@
       }
     }
 
-    #seccionjuego #infojuego{
-          width: 60%;
-          margin-top: 2%;
-          float:left;
+
+    #seccionjuego #caratula{
+      float: left;
+      height: 70%;
+      width: 30rem;
+      margin: 2%;
+
+    }
+    #seccionjuego #caratula img{
+      float: left;
+      width: 100%;
+      height: 80%;
+      border: 5px groove black;
+      display: inline-block;
+    }
+    #seccionjuego #caratula #buttons{
+      width: 100%;
+    }
+    #seccionjuego #caratula #buttons button{
+      float:left;
+      margin-top: 2%;
+
+      height: 10%;
+      width: 50%;
+    }
+    #seccionjuego #caratula #buttons button:nth-child(2){
+      float: right;
+    }
+    #seccionjuego #caratula button div{
+      font-size: 140%;
+      height: 80%;
+      width: 100%;
+      margin-right: 0%;
+
     }
 
+    #seccionjuego #caratula button div img{
+
+      margin-left: 0%;
+      border: none;
+      height: 100%;
+      width: 20%;
+
+    }
+
+    #seccionjuego #infojuego{
+      width: 60%;
+      margin-top: 2%;
+      float:left;
+    }
 
     #seccionjuego div h1{
 

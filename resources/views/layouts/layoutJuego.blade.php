@@ -37,24 +37,31 @@
 
           <?php
             $icodgame = $_GET['icodgame'];
-						$nombreusuario = $_SESSION['nombre'];
+						/*$nombreusuario = $_SESSION['nombre'];
 
 						$puntos = DB::table('users')->where('name', $nombreusuario)->value('points');
-
+						*/
             $resultado = DB::table('games')->where('icodgame', $icodgame)->get();
 
             foreach ($resultado as $mostrar) {
 							$id = $mostrar->icodgame;
 							$nombre = $mostrar->game_name;
 							$precio = $mostrar->precio;
+							$precioJP = $mostrar->precio_jp;
 							$caratula = $mostrar->caratula;
 							$desarrollador = $mostrar->desarrollador;
 							$genero = $mostrar->genero;
 							$trailer = $mostrar->trailer;
 							$descripcion = $mostrar->descripcion;
             }
-						echo "$puntos";
+						//echo "$puntos";
+						echo "<div id = 'caratula'>";
 						echo "<img src='$caratula'/>";
+						echo "<div id = 'buttons'>";
+						echo "<button type='button' class='btn-success'><div>Comprar $precio €</div></button>";
+						echo "<button type='button' class='btn-danger'><div>Comprar $precioJP JP<img src='img/jugger.ico'/></div></button>";
+						echo "</div>";
+						echo "</div>";
 						echo "<div id='infojuego'>";
 						echo "<h1>".$nombre."</h1>";
 						echo "<h3>".$genero."</h3>";
