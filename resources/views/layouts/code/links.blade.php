@@ -1,4 +1,4 @@
-<head>
+
   <title>Juggernau7</title>
   <link href="style.css" rel="stylesheet" type="text/css">
   <link href="img/jugger.ico" rel="shortcut icon" type="image/x-icon">
@@ -107,6 +107,7 @@
     }
     #seccionjuego #caratula #buttons button:nth-child(2){
       float: right;
+    
     }
     #seccionjuego #caratula button div{
       font-size: 140%;
@@ -154,4 +155,3 @@
 
 
   </style>
-</head>

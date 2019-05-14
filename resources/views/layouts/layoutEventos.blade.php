@@ -1,8 +1,8 @@
 <html>
-
+	<head>
 @include("layouts.code.links")
 @yield("links")
-
+	</head>
 	<body>
 
 @include("layouts.code.header")

@@ -1,8 +1,8 @@
 <html>
-
+	<head>
 @include("layouts.code.links")
 @yield("links")
-
+	</head>
 	<body>
 
 @include("layouts.code.header")
@@ -61,7 +61,7 @@
 				<div class="pie_seccion"></div>
 			</div>
 		</div>
-		
+
 		@include("layouts.code.footer")
 		@yield("footer")
 
