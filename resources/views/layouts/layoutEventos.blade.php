@@ -13,7 +13,7 @@
 	?>
     <nav>
 			<a href="http://localhost/juggernaut/public/"><div class="seccion">Inicio</div></a>
-			<div class="activo seccion">Eventos</div></a>
+			<a href="http://localhost/juggernaut/public/eventos"><div class="activo seccion">Eventos</div></a>
 			<a href="http://localhost/juggernaut/public/rankings"><div class="seccion">Rankings</div></a>
 			<a href="http://localhost/juggernaut/public/tienda"><div class="seccion">Tienda</div></a>
 			<a href="http://localhost/juggernaut/public/foros"><div class="seccion">Foros</div></a>

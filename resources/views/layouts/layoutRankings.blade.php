@@ -14,7 +14,7 @@
 		<nav>
 			<a href="http://localhost/juggernaut/public/"><div class="seccion">Inicio</div></a>
 			<a href="http://localhost/juggernaut/public/eventos"><div class="seccion">Eventos</div></a>
-			<div class="activo seccion">Rankings</div>
+			<a href="http://localhost/juggernaut/public/rankings"><div class="activo seccion">Rankings</div></a>
 			<a href="http://localhost/juggernaut/public/tienda"><div class="seccion">Tienda</div></a>
 			<a href="http://localhost/juggernaut/public/foros"><div class="seccion">Foros</div></a>
 			<!--<a href="login.html"><div class="float_der">Iniciar sesión</div></a>-->

@@ -11,7 +11,7 @@
 			session_start();
 		?>
 		<nav>
-			<div class="activo seccion">Inicio</div>
+			<a href="http://localhost/juggernaut/public/"><div class="activo seccion">Inicio</div></a>
 			<a href="http://localhost/juggernaut/public/eventos"><div class="seccion">Eventos</div></a>
 			<a href="http://localhost/juggernaut/public/rankings"><div class="seccion">Rankings</div></a>
 			<a href="http://localhost/juggernaut/public/tienda"><div class="seccion">Tienda</div></a>

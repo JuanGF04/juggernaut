@@ -15,7 +15,7 @@
 			<a href="http://localhost/juggernaut/public/eventos"><div class="seccion">Eventos</div></a>
 			<a href="http://localhost/juggernaut/public/rankings"><div class="seccion">Rankings</div></a>
 			<a href="http://localhost/juggernaut/public/tienda"><div class="seccion">Tienda</div></a>
-			<div class="activo seccion">Foros</div>
+			<a href="http://localhost/juggernaut/public/foros"><div class="activo seccion">Foros</div></a>
 			<!--<a href="login.html"><div class="float_der">Iniciar sesión</div></a>-->
 			@include("layouts.code.cuadroLogin")
 			@yield("cuadroLogin")
