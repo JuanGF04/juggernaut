@@ -1,8 +1,13 @@
 <html>
-
-@include("layouts.code.links")
-@yield("links")
-
+	<head>
+		@include("layouts.code.links")
+		@yield("links")
+		<script languaje="javascript">
+			function añadirCesta(){
+			confirm("¿Añadir este juego a la cesta?");
+			}
+		</script>
+	</head>
 	<body>
 
 @include("layouts.code.header")
@@ -58,8 +63,8 @@
 						echo "<div id = 'caratula'>";
 						echo "<img src='$caratula'/>";
 						echo "<div id = 'buttons'>";
-						echo "<button type='button' class='btn-success'><div>Comprar $precio €</div></button>";
-						echo "<button type='button' class='btn-danger'><div>Comprar $precioJP JP<img src='img/jugger.ico'/></div></button>";
+						echo "<button type='button' class='btn-success' onclick='añadirCesta()'><div>Comprar $precio €</div></button>";
+						echo "<button type='button' class='btn-danger' onclick='añadirCesta()'><div>Comprar $precioJP JP<img src='img/jugger.ico'/></div></button>";
 						echo "</div>";
 						echo "</div>";
 						echo "<div id='infojuego'>";
