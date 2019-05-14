@@ -23,7 +23,7 @@
 
 
 		</nav>
-		<div class="main" style="height: 300%;">
+		<div class="main">
 			<div class="seccion2">
 			<header><div><span>Más populares</span></div></header>
 
@@ -96,7 +96,7 @@
 
 								<?php
 
-									$resultado = DB::table('games')->orderBy('popularidad', 'desc')->limit(10)->get();
+									$resultado = DB::table('games')->orderBy('popularidad', 'desc')->limit(15)->get();
 
 									//echo "<table border='1'>";
 									echo "<div id='container'>";

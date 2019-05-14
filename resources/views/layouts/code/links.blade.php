@@ -44,7 +44,7 @@
       display: inline-block;
       margin-left: 1%;
       width: 16.8em;
-      height: 15%;
+      height: 35%;
     }
 
     @media screen and (max-width:1600px) {
@@ -52,7 +52,7 @@
         display: inline-block;
         margin-left: 1%;
         width: 13.5em;
-        height: 15%;
+        height: 35%;
       }
     }
 
@@ -63,24 +63,26 @@
       height: 80%;
     }
 
-    #seccionjuego{
-      height: 80em;
-    }
 
     #seccionjuego img{
       float: left;
       margin: 2%;
-      width: 30%;
-      height: 40%;
+      width: 30rem;
+      height: 60%;
       border: 5px groove black;
+      display: inline-block;
     }
 
     #seccionjuego video{
-      border: 5px groove black;
-      width:85%;
-      height:31%;
-      float:right;
+      width:80%;
+    	height:35%;
+    }
 
+    @media screen and (max-width:1000px) {
+      #seccionjuego video{
+        width: 20em;
+        height: 10em;
+      }
     }
 
     #seccionjuego #infojuego{
