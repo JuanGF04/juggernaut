@@ -107,7 +107,7 @@
     }
     #seccionjuego #caratula #buttons button:nth-child(2){
       float: right;
-    
+
     }
     #seccionjuego #caratula button div{
       font-size: 140%;
@@ -123,7 +123,10 @@
       border: none;
       height: 100%;
       width: 20%;
+    }
 
+    #seccionjuego #caratula span{
+      margin-left:10%;
     }
 
     #seccionjuego #infojuego{

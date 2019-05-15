@@ -7,6 +7,14 @@
 			confirm("¿Añadir este juego a la cesta?");
 			}
 		</script>
+
+		<style type="text/css">
+			#disabledbutton{
+				background-color: rgba(145, 145, 145, 0.7);
+				border-color: rgba(96, 96, 96, 1);
+
+			}
+		</style>
 	</head>
 	<body>
 
@@ -59,12 +67,23 @@
 							$trailer = $mostrar->trailer;
 							$descripcion = $mostrar->descripcion;
             }
+
+						?>
+						<?php
 						//echo "$puntos";
 						echo "<div id = 'caratula'>";
 						echo "<img src='$caratula'/>";
 						echo "<div id = 'buttons'>";
-						echo "<button type='button' class='btn-success' onclick='añadirCesta()'><div>Comprar $precio €</div></button>";
-						echo "<button type='button' class='btn-danger' onclick='añadirCesta()'><div>Comprar $precioJP JP<img src='img/jugger.ico'/></div></button>";
+						if(isset($_SESSION['logueado'])){
+							if ($_SESSION['logueado']==false){
+								echo "<button type='button' id='disabledbutton' class='btn-success' onclick='añadirCesta()' disabled><div>Comprar $precio €</div></button>";
+								echo "<button type='button' id='disabledbutton' class='btn-danger' onclick='añadirCesta()' disabled><div>Comprar $precioJP JP<img src='img/jugger.ico'/></div></button>";
+								echo "<span>Para adquirir un videojuego es necesario iniciar sesión</span>";
+							}else{
+								echo "<button type='button' class='btn-success' onclick='añadirCesta()'><div>Comprar $precio €</div></button>";
+								echo "<button type='button' class='btn-danger' onclick='añadirCesta()'><div>Comprar $precioJP JP<img src='img/jugger.ico'/></div></button>";
+							}
+						}
 						echo "</div>";
 						echo "</div>";
 						echo "<div id='infojuego'>";
