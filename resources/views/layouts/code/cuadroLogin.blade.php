@@ -34,7 +34,7 @@ $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
                       <?php
                         if(isset($_SESSION['fallolog'])){
                           if($_SESSION['fallolog']==true){
-                            echo "<p class='text-danger'>Fallo al registrarse</p>";
+                            echo "<p class='text-danger'>Fallo al iniciar sesión</p>";
                           }
                         }
                        ?>
@@ -67,7 +67,7 @@ $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
                             //PARA 1 VALOR
                             $puntuacion = DB::table('users')->where('name', $nombrecito)->value('points');
                             //PARA VARIOS
-                            
+
                             echo $puntuacion;
                            ?>
                         </div>
