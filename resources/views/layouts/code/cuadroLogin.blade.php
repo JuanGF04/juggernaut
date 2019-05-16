@@ -17,7 +17,7 @@ $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
   if($_SESSION['logueado']==false){
 ?>
 <div id="claseformulario" class="seccion">
-  <a href="#" class="dropdown-toggle text-white" data-toggle="dropdown" role="button">Iniciar sesión<span class="caret"></span></a>
+  <a href="#" class="dropdown-toggle text-white" data-toggle="dropdown" role="button">Iniciar sesión</a>
         <div class="dropdown-menu" id="formlogin">
           <div class="row">
               <div class="container-fluid">
@@ -52,27 +52,26 @@ $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
         }else{
   ?>
   <div id="claseformulario" class="seccion">
-    <a href="#" class="dropdown-toggle text-white" data-toggle="dropdown" role="button">
+    <a href="#" class="text-white" data-toggle="dropdown" role="button">
       <?php
         echo $_SESSION['nombre'];
+
        ?>
-      <span class="caret"></span></a>
+    </a>
           <div class="dropdown-menu" id="formlogin">
             <div class="row">
                 <div class="container-fluid">
-                        <div><img width="10%" src="img/jugger.ico"></div>
-                        <div id='points'>
+                        <div id="puntosPersonales"><img width="10%" src="img/jugger.ico">
                           <?php
                             $nombrecito = $_SESSION['nombre'];
                             //PARA 1 VALOR
                             $puntuacion = DB::table('users')->where('name', $nombrecito)->value('points');
                             //PARA VARIOS
 
-                            echo $puntuacion;
+                            echo "$puntuacion JP";
                            ?>
                         </div>
                         <a class="text-danger" href>MI CESTA</a>
-
                         <div class="dropdown-divider"></div>
                         <a class="text-danger" href="http://localhost/juggernaut/public/cerrarsesion">Cerrar sesión</a>
                   </div>

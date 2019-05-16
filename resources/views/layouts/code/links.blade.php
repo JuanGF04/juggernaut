@@ -9,6 +9,7 @@
       padding: 15px;
       min-width:300px;
       margin-right: 100px;
+      border:2px solid rgba(200,0,0,1);
     }
     #claseformulario{
       float:right;
@@ -16,6 +17,12 @@
       border: none;
       border-left: 1px solid black;
     }
+
+    #puntosPersonales{
+      font-size: 200%;
+
+    }
+
 
     #formReg{
       margin-top: 2%;
@@ -52,7 +59,12 @@
         display: inline-block;
         margin-left: 1%;
         width: 13.5em;
-        height: 35%;
+        height: 30%;
+      }
+
+      #juegoconcreto span{
+        font-size: 100%;
+
       }
     }
 
@@ -60,7 +72,7 @@
     #imagenpopu{
       margin-left: 0;
       width: 100%;
-      height: 80%;
+      height: 85%;
     }
 
 
@@ -151,6 +163,12 @@
     #seccionjuego div p{
       float: left;
       clear: both;
+    }
+
+    .juggpoints{
+      height: 50%;
+      float:left;
+      clear:both;
     }
 
 
