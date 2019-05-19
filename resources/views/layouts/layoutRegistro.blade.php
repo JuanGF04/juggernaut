@@ -2,6 +2,7 @@
 	<head>
 @include("layouts.code.links")
 @yield("links")
+
 	<style type="text/css">
 		h1 a{
 			color:white;
@@ -14,8 +15,8 @@
 			transition: .2s all ease-in-out;
 		}
 	</style>
-	</head>
 
+	</head>
 
 	<body>
 		<h1 style="font-family: graceland; color: white;"><a href=".">Juggernaut</a> | Formulario de registro</h1>
