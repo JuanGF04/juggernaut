@@ -2,11 +2,6 @@
 	<head>
 		@include("layouts.code.links")
 		@yield("links")
-		<script languaje="javascript">
-			function añadirCesta(){
-			confirm("¿Añadir este juego a la cesta?");
-			}
-		</script>
 
 		<style type="text/css">
 			#disabledbutton{
@@ -104,6 +99,11 @@
 
 		@include("layouts.code.scripts")
 		@yield("scripts")
+		<script languaje="javascript">
+			function añadirCesta(){
+				window.location.replace("http://localhost/juggernaut/public/agregargame?id=<?=$id?>");
+			}
+		</script>
 
 	</body>
 </html>

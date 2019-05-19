@@ -21,3 +21,6 @@ Route::get("/registro","controllerMain@registro");
 Route::get("/createuser","controllerMain@createuser");
 Route::get("/cerrarsesion","controllerMain@cerrarsesion");
 Route::get("/juego","controllerMain@juego");
+Route::get("/carrocompra","controllerMain@carrocompra");
+Route::get("/agregargame","controllerMain@agregargame");
+Route::get("/borrargame","controllerMain@borrargame");

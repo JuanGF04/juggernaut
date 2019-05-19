@@ -71,7 +71,7 @@ $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
                             echo $puntuacion;
                            ?>
                         </div>
-                        <a class="text-danger" href>MI CESTA</a>
+                        <a class="text-danger" href="http://localhost/juggernaut/public/carrocompra">MI CESTA</a>
 
                         <div class="dropdown-divider"></div>
                         <a class="text-danger" href="http://localhost/juggernaut/public/cerrarsesion">Cerrar sesión</a>

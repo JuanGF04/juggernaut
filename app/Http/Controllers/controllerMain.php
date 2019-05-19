@@ -46,6 +46,16 @@ class controllerMain extends Controller
   public function juego(){
     return view ("juego");
   }
+  public function agregargame(){
+    return view ("agregargame");
+  }
+  public function carrocompra(){
+    return view ("carrocompra");
+  }
+
+  public function borrargame(){
+    return view ("borrargame");
+  }
 
 }
 
