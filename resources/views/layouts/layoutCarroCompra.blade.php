@@ -28,7 +28,7 @@
 			}
 
 			table tr td{
-				border: 2px solid blue;
+				/*border: 2px solid blue;*/
 			}
 			table tr td:nth-child(1){
 				width: 20%;
