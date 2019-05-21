@@ -2,6 +2,98 @@
 	<head>
 @include("layouts.code.links")
 @yield("links")
+
+		<style type="text/css">
+
+			div.main{
+				height: auto;
+
+			}
+			h1{
+				color: black;
+				margin-top: 2%;
+				text-align: center;
+				font-family: graceland;
+			}
+			.caja_lista{
+				width: 98%;
+				margin-left: 3%;
+				padding-top: 2%;
+				padding-left: 5%;
+				padding-bottom: 3%;
+			}
+			table{
+				width: 90%;
+
+			}
+
+			table tr td{
+				border: 2px solid blue;
+			}
+			table tr td:nth-child(1){
+				width: 20%;
+				height: 30vh;
+
+			}
+			table tr td:nth-child(1) img{
+				border-radius: 1500px;
+				width: 100%;
+				height: 100%;
+			}
+			table tr td:nth-child(2) {
+				padding-left: 5%;
+				width: 60%;
+			}
+			table tr td:nth-child(2) span{
+				font-size: 3vw;
+			}
+			table tr td:nth-child(3) {
+				padding-left: 7%;
+				width: 20%;
+			}
+			table tr td:nth-child(3) span{
+				font-size: 2vw;
+			}
+			table tr td:nth-child(4){
+			}
+			table tr td:nth-child(4) img{
+				height: 50%;
+				width: 5vw;
+				position: relative;
+			}
+
+			table tr td:nth-child(4) img:hover{
+				animation: botar;
+				animation-duration: 1s;
+				animation-iteration-count: infinite;
+			}
+
+			table tr:nth-last-child(1) td{
+				height: auto;
+				text-align: right;
+			}
+			table tr:nth-last-child(1) td span{
+				font-size: 3vw;
+			}
+
+			@keyframes botar {
+				0%{
+					bottom: 0%;
+					}
+				25%{
+					bottom: 5%;
+				}
+				50%{
+					bottom:0%;
+				}
+				75%{
+					bottom: 5%;
+				}
+				100%{
+					bottom: 0%;
+				}
+			}
+		</style>
 	</head>
 	<body>
 
@@ -35,8 +127,9 @@
       $game2 = DB::table('compra')->where('icoduser', $icoduser)->value('icodgame2');
       $game3 = DB::table('compra')->where('icoduser', $icoduser)->value('icodgame3');
 
-			echo "Los juegos que has añadido a la cesta son:"."<br>";
-
+			echo "<h1>Mi cesta</h1>";
+			echo "<div class='caja_lista'>";
+			echo "<table>";
 			$resultado = DB::table('games')->where('icodgame', $game1)->orWhere('icodgame', $game2)->orWhere('icodgame', $game3)->get();
 
 			foreach ($resultado as $mostrar) {
@@ -50,12 +143,15 @@
 				$trailer = $mostrar->trailer;
 				$descripcion = $mostrar->descripcion;
 
-
-					echo "<img src='$caratula' />".$nombre."<a href='http://localhost/juggernaut/public/borrargame?idgame=$id'><img width='50px' heigth='50px' src='img/borrar.png' /><br></a>";
-
+					echo"<tr>";
+					echo "<td><img src='$caratula' /></td><td><span>$nombre</span></td><td><span>$precio €</span></td><td><a href='http://localhost/juggernaut/public/borrargame?idgame=$id'><img src='img/borrar.png' /></a></td>";
+					echo "</tr>";
 			}
-
-			echo "<a href='comprar.php'>Comprar</a>"
+			$precio_total = DB::table('compra')->where('icoduser', $icoduser)->value('precio_total');
+			echo "<tr><td colspan='4'><span>Total: $precio_total €</span></td></tr>";
+			echo "</table>";
+			echo "</div>";
+			echo "<a href='comprar.php'>Comprar</a>";
 
 
 

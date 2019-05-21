@@ -64,7 +64,6 @@
 
       #juegoconcreto span{
         font-size: 100%;
-
       }
     }
 
