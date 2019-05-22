@@ -93,6 +93,24 @@
 					bottom: 0%;
 				}
 			}
+
+			#cestavacia{
+				text-align: center;
+				margin-bottom:10%;
+				width: 90%;
+			}
+
+			#cestavacia span{
+				font-size: 5vw;
+			}
+			#cestavacia a{
+
+				color: rgba(200,0,0,1);
+				font-size: 2vw;
+				border: 2px solid red;
+				border-radius: 10px;
+				background-color: rgba(200,200,200,.5);
+			}
 		</style>
 	</head>
 	<body>
@@ -107,7 +125,7 @@
 			<a href="http://localhost/juggernaut/public/"><div class="seccion">Inicio</div></a>
 			<a href="http://localhost/juggernaut/public/eventos"><div class="seccion">Eventos</div></a>
 			<a href="http://localhost/juggernaut/public/rankings"><div class="seccion">Rankings</div></a>
-			<a href="http://localhost/juggernaut/public/tienda"><div class="activo seccion">Tienda</div></a>
+			<a href="http://localhost/juggernaut/public/tienda"><div class="seccion">Tienda</div></a>
 			<a href="http://localhost/juggernaut/public/foros"><div class="seccion">Foros</div></a>
 			<!--<a href="login.html"><div class="float_der seccion">Iniciar sesión</div></a>-->
 			@include("layouts.code.cuadroLogin")
@@ -129,6 +147,12 @@
 
 			echo "<h1>Mi cesta</h1>";
 			echo "<div class='caja_lista'>";
+			if($game1 == 0){
+				echo "<div id='cestavacia'>";
+				echo "<span>Tu cesta de la compra está vacía</span><br>";
+				echo "<a href='http://localhost/juggernaut/public/tienda'>Ir a la tienda</a>";
+				echo "</div>";
+			}
 			echo "<table>";
 			$resultado = DB::table('games')->where('icodgame', $game1)->orWhere('icodgame', $game2)->orWhere('icodgame', $game3)->get();
 
