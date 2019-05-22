@@ -112,36 +112,48 @@
     #seccionjuego #caratula #buttons button{
       float:left;
       margin-top: 2%;
-
       height: 10%;
       width: 50%;
+      text-align:center;
     }
+
     #seccionjuego #caratula #buttons button:nth-child(2){
-      float: right;
-
+      float: left;
     }
-    #seccionjuego #caratula button div{
-      font-size: 140%;
-      height: 80%;
-      width: 100%;
-      margin-right: 0%;
+
+    #seccionjuego #caratula #buttons button span{
+      font-size: 1vw;
 
     }
 
-    #seccionjuego #caratula button div img{
-
-      margin-left: 0%;
+    #seccionjuego #caratula #buttons button span img{
+      vertical-align: middle;
       border: none;
-      height: 100%;
+      float: none;
       width: 20%;
+      height: 100%;
     }
+
+    #seccionjuego #caratula #buttons button:nth-child(2) span{
+      float: left;
+      height: 50%;
+
+    }
+
+
+
+
+
+
+
+
 
     #seccionjuego #caratula span{
       margin-left:10%;
     }
 
     #seccionjuego #infojuego{
-      width: 60%;
+      width: 57%;
       margin-top: 2%;
       float:left;
     }
