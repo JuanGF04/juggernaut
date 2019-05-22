@@ -123,6 +123,8 @@
 
     #seccionjuego #caratula #buttons button span{
       font-size: 1vw;
+      color: white;
+
 
     }
 
@@ -130,13 +132,12 @@
       vertical-align: middle;
       border: none;
       float: none;
-      width: 20%;
-      height: 100%;
+      width: 15%;
+      height: 50%;
     }
 
     #seccionjuego #caratula #buttons button:nth-child(2) span{
-      float: left;
-      height: 50%;
+      height: 70%;
 
     }
 
