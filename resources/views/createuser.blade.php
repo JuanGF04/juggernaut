@@ -13,7 +13,7 @@
     $password=crypt($_GET['pass'],$salt);
     $mail = $_GET['mail'];
 
-    DB::insert('insert into users (icoduser, name, password , mail, juggernaut_points)
+    DB::insert('insert into users (icoduser, name, password , mail, points)
     values (?, ?, ?, ?, ?)', array(0, $name, $password, $mail, 0));
 
     header('Location: http://localhost/juggernaut/public');

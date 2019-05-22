@@ -122,7 +122,7 @@
     }
 
     #seccionjuego #caratula #buttons button span{
-      font-size: 1vw;
+      font-size: 1.3vw;
       color: white;
 
 
