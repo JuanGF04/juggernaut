@@ -28,9 +28,24 @@ body{
 	background-color:black;
 	margin: auto;
 	height:4%;
+	overflow: hidden;
 }
-.cabecera marquee{
-	color:white;
+.cabecera span{
+	color: white;
+	right: 40%;
+	position:relative;
+	animation-name: marquesina;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes marquesina{
+	from{
+		right: 40%;
+	}
+	to {
+		right: -100%;
+	}
 }
 
 header.principal{
