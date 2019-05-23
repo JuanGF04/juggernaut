@@ -24,3 +24,6 @@ Route::get("/juego","controllerMain@juego");
 Route::get("/carrocompra","controllerMain@carrocompra");
 Route::get("/agregargame","controllerMain@agregargame");
 Route::get("/borrargame","controllerMain@borrargame");
+Route::get("/adminJuegos","controllerMain@adminJuegos");
+Route::get("/añadirJuego","controllerMain@añadirJuego");
+Route::get("/borrarJuego","controllerMain@borrarJuego");

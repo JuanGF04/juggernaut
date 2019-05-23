@@ -57,6 +57,18 @@ class controllerMain extends Controller
     return view ("borrargame");
   }
 
+  public function adminJuegos(){
+    return view ("adminJuegos");
+  }
+
+  public function añadirJuego(){
+    return view ("añadirJuego");
+  }
+
+  public function borrarJuego(){
+    return view ("borrarJuego");
+  }
+
 }
 
 ?>

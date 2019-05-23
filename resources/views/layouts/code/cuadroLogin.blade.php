@@ -73,12 +73,17 @@ $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
                         </div>
 
                         <a class="text-danger" href="http://localhost/juggernaut/public/carrocompra">MI CESTA</a>
+                        <?php
+                          if($_SESSION['nombre'] == "admin"){
+                            echo "<br><a class='text-danger' href='http://localhost/juggernaut/public/adminJuegos'>Administrar juegos</a>";
+
+                          }
+                        ?>
 
 
-    
 
                         <div class="dropdown-divider"></div>
-                        <a class="text-danger" href="http://localhost/juggernaut/public/cerrarsesion">Cerrar sesión</a>
+                        <a class="text-danger" style="float: right;" href="http://localhost/juggernaut/public/cerrarsesion">Cerrar sesión</a>
                   </div>
             </div>
           </div>
