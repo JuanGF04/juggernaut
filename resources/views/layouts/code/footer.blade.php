@@ -2,7 +2,7 @@
   <div>
     <img src="img/instagram.png">
     <img src="img/facebook.png">
-    <img src="img/linkedin.png"><br>
+    <img src="img/twitter.png"><br>
     <span>Juan González Fernández</span>
     <span>Juggernaut Corp.</span>
   </div>
