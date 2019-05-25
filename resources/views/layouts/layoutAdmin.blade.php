@@ -117,6 +117,21 @@
           </div>
 
           <div class="col-sm-12 mt-3">
+            <label for="name" id="labelForm">Fecha de lanzamiento</label>
+            <input class="form-control" type="date" name="fecha" required/><br/>
+          </div>
+
+          <div class="col-sm-12 mt-3">
+            <label for="name" id="labelForm">Caratula</label>
+            <input class="form-control" type="text" name="caratula" required/><br/>
+          </div>
+
+          <div class="col-sm-12 mt-3">
+            <label for="name" id="labelForm">Trailer</label>
+            <input class="form-control" type="text" name="trailer" required/><br/>
+          </div>
+
+          <div class="col-sm-12 mt-3">
             <label for="name" id="labelForm">Desarrollador</label>
             <input class="form-control" type="text" name="desarrollador" required/><br/>
           </div>
@@ -129,6 +144,17 @@
             <label for="name" id="labelForm">Descripción</label>
             <input class="form-control" type="text" name="descripcion" required/><br/>
           </div>
+
+          <div class="col-sm-12 mt-3">
+            <label for="name" id="labelForm">Popularidad</label>
+            <input class="form-control" type="number" name="popularidad" required/><br/>
+          </div>
+
+          <div class="col-sm-12 mt-3">
+            <label for="name" id="labelForm">Valoración Juggernaut</label>
+            <input class="form-control" type="number" name="jugg_value" required/><br/>
+          </div>
+
         <button class="ml-3 mt-3 btn " type="submit" id="botonAñadir">Añadir</button>
         </div>
       </div>
