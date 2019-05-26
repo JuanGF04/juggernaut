@@ -56,13 +56,13 @@
 			}
 			table tr td:nth-child(4){
 			}
-			table tr td:nth-child(4) img{
+			table tr td:nth-child(5) img{
 				height: 50%;
 				width: 5vw;
 				position: relative;
 			}
 
-			table tr td:nth-child(4) img:hover{
+			table tr td:nth-child(5) img:hover{
 				animation: botar;
 				animation-duration: 1s;
 				animation-iteration-count: infinite;
@@ -142,6 +142,7 @@
       $icoduser = DB::table('users')->where('name', $nombre)->value('icoduser');
 
       $game1 = DB::table('compra')->where('icoduser', $icoduser)->value('icodgame1');
+			$unidadesgame1 = DB::table('compra')->where('icoduser', $icoduser)->value('unidadesgame1');
       $game2 = DB::table('compra')->where('icoduser', $icoduser)->value('icodgame2');
       $game3 = DB::table('compra')->where('icoduser', $icoduser)->value('icodgame3');
 
@@ -168,7 +169,7 @@
 				$descripcion = $mostrar->descripcion;
 
 					echo"<tr>";
-					echo "<td><img src='$caratula' /></td><td><span>$nombre</span></td><td><span>$precio €</span></td><td><a href='http://localhost/juggernaut/public/borrargame?idgame=$id'><img src='img/borrar.png' /></a></td>";
+					echo "<td><img src='$caratula' /></td><td><span>$nombre</span></td><td><span>$precio € | $precioJP </span></td><td><span>$unidadesgame1</span></td><td><a href='http://localhost/juggernaut/public/borrargame?idgame=$id'><img src='img/borrar.png' /></a></td>";
 					echo "</tr>";
 			}
 			$precio_total = DB::table('compra')->where('icoduser', $icoduser)->value('precio_total');
