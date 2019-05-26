@@ -177,7 +177,7 @@
                  <td>$nombre</td>
                  <td>$precio €</td>
                  <td>$precioJP</td>
-                 <td><a onclick='borrarJuego()'><img src='img/borrar.png' /></a></td>
+                 <td><a onclick='borrarJuego($id)'><img src='img/borrar.png' /></a></td>
                </tr>";
          }
 
@@ -185,10 +185,12 @@
 
        ?>
        <script languaje="javascript">
-         function borrarJuego(){
+         function borrarJuego(n){
+					 alert(n);
            var opcion = confirm("¿Estás seguro?");
            if(opcion == true){
-             window.location.replace("http://localhost/juggernaut/public/borrarJuego?icodgame=<?=$id?>");
+						 
+             window.location.replace("http://localhost/juggernaut/public/borrarJuego?icodgame="+ n);
            }else{
              return false;
            }
