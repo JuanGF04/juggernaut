@@ -22,6 +22,7 @@
 		</nav>
 
 		<div class="main">
+
 			<?php
 				if(isset($_SESSION['logueado'])){
 					if ($_SESSION['logueado']==false){
@@ -45,7 +46,6 @@
 			 ?>
 
 
-
 			<div class="seccion1">
 				<header><span>Juego recomendado de la semana</span></header>
 				<video width="320" height="240" poster="img/bloodborne.jpg" controls muted autoplay loop>
@@ -64,31 +64,15 @@
 			</div>
 
 			<div class="seccion2">
-				<header><span>Últimas noticias</span></header>
-				<table>
-					<tr>
-						<td><img src="img/noticia1.jpg"><h3>God of War 4 llega el 20 de abril con un Kratos renovado</h3></td>
-						<td><img src="img/noticia1.jpg"><h3>God of War 4 llega el 20 de abril con un Kratos renovado</h3></td>
-						<td><img src="img/noticia1.jpg"><h3>God of War 4 llega el 20 de abril con un Kratos renovado</h3></td>
-					</tr>
-					<tr>
-						<td><img src="img/noticia1.jpg"><h3>God of War 4 llega el 20 de abril con un Kratos renovado</h3></td>
-						<td><img src="img/noticia1.jpg"><h3>God of War 4 llega el 20 de abril con un Kratos renovado</h3></td>
-						<td><img src="img/noticia1.jpg"><h3>God of War 4 llega el 20 de abril con un Kratos renovado</h3></td>
-					</tr>
-				</table>
+				<header><div><span>Últimas noticias</span></div></header>
+				<div id="juegoconcreto">Hola</div>
+
 				<div class="pie_seccion"><a href="http://www.google.es">Ver más</a></div>
 			</div>
 
 			<div class="seccion2">
-				<header><span>Artículos</span></header>
-				<table>
-					<tr>
-						<td><img src="img/articulo1.jpg"><h3>¿Los videojuegos estimulan la creatividad?</h3></td>
-						<td><img src="img/articulo1.jpg"><h3>¿Los videojuegos estimulan la creatividad?</h3></td>
-						<td><img src="img/articulo1.jpg"><h3>¿Los videojuegos estimulan la creatividad?</h3></td>
-					</tr>
-				</table>
+				<header><div><span>Artículos</span></div></header>
+				<div id="juegoconcreto">Hola</div>
 				<div class="pie_seccion"><a href="http://www.google.es">Ver más</a></div>
 			</div>
 		</div>

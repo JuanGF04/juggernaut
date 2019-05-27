@@ -19,7 +19,6 @@ body{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size:cover;
-	margin: 0px;
 }
 
 
@@ -28,7 +27,7 @@ body{
 	background-color:black;
 	margin: auto;
 	height:4%;
-	overflow: hidden;
+	overflow: visible;
 }
 .cabecera span{
 	color: white;
@@ -49,23 +48,22 @@ body{
 }
 
 header.principal{
-	display: flex;
 	background-color:rgba(200,0,0,1);
 	width: 90%;
 	height: 30%;
 	text-align:center;
 	margin-left: 4.5%;
 	margin-top: 2%;
-	border:1px solid;
+	border: 1px solid;
 	overflow: hidden;
 	border-top: 2px solid black;
 	border-left: 2px solid black;
 	border-right: 2px solid black;
 	border-radius: 10px;
+
 }
 
 header.principal div{
-
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -74,7 +72,7 @@ header.principal div{
 header.principal div h1{
 	width:60%;
 	height:100%;
-	font-size: 900%;
+	font-size: 8vw;
 	font-family: graceland;
 	margin-top: 0px;
 	float: left;
@@ -98,8 +96,10 @@ nav{
 	margin-left: 4.5%;
 	background-color:rgba(200,0,0,1);
 	position: sticky;
-	top: 0;
+	top:0px;
+
 }
+
 .seccion{
 	display: flex;
 	justify-content: center;
@@ -121,22 +121,14 @@ nav{
 	background-color:black;
 	color:white;
 }
-.float_der{
-	float:right;
-	color: black;
-	border: none;
-	border-left: 1px solid black;
-}
+
 .main{
 	background-color:rgba(255,255,255,0.5);
-	margin-top: 0px;
 	border:1px solid;
-	margin-left: 4.7%;
+	margin-left: 4.5%;
 	margin-bottom:2%;
 	width: 90%;
-	display: inline-block;
-	float:left;
-
+	overflow: hidden;
 }
 .bienvenida{
 	margin-top: 3%;
@@ -378,59 +370,6 @@ nav{
 .cuadro table tr td img {
 	width: 15%;
 	height: 10%;
-}
-.info{
-	margin-left: 3%;
-	width: 60%;
-	float:left;
-}
-.info h1{
-	font-family:graceland;
-	font-size: 360%;
-}
-.info p{
-	font-size: 150%;
-}
-.map{
-	float:left;
-	width: 30%;
-	margin-top: 10%;
-}
-.login{
-	background-color: rgba(200,0,0,1);
-	width:30%;
-	margin-bottom:5%;
-	border: 2px solid black;
-	margin-top: 5%;
-	margin-left: 35%;
-	height: 40%;
-}
-.login header{
-	width:100%;
-	background-color: black;
-	font-family: graceland;
-	color:white;
-
-}
-.login header span{
-	margin-left:5%;
-	font-size: 200%;
-}
-.login table{
-
-	margin-left: 12%;
-	height: 60%;
-}
-.login table tr{
-	margin-bottom: 5%;
-}
-.login input{
-	float: right;
-	margin-right: 20%;
-	margin-left: 5%;
-}
-.login a{
-	float: right;
 }
 footer{
 	float:left;

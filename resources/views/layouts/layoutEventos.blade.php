@@ -25,42 +25,21 @@
 
 		<div class="main">
 			<div class="seccion2">
-			<header><span>Eventos en curso</span></header>
-				<table>
-					<tr>
-						<td><img src="img/evento1.jpg"><h3>Torneo Juggernaut de League of Legends (Ganador: 500 JP)</h3></td>
-						<td><img src="img/evento1.jpg"><h3>Torneo Juggernaut de League of Legends (Ganador: 500 JP)</h3></td>
-					</tr>
-				</table>
+			<header><div><span>Eventos en curso</span></div></header>
+				<div>Hola</div>
 				<div class="pie_seccion"><a href="http://www.google.es">Ver más</a></div>
 			</div>
 
 			<div class="seccion2">
-			<header><span>Próximos eventos</span></header>
-				<table>
-					<tr>
-						<td><img src="img/evento2.jpg"><h3>Starcraft II League; Jornada 3</h3></td>
-						<td><img src="img/evento2.jpg"><h3>Starcraft II League; Jornada 3</h3></td>
-						<td><img src="img/evento2.jpg"><h3>Starcraft II League; Jornada 3</h3></td>
-					</tr>
-				</table>
+			<header><div><span>Próximos eventos</span></div></header>
+				<div>Hola</div>
+
 				<div class="pie_seccion"><a href="http://www.google.es">Ver más</a></div>
 			</div>
 
 			<div class="seccion2">
-			<header><span>Eventos finalizados</span></header>
-				<table>
-					<tr>
-						<td><img src="img/evento3.jpg"><h3>Torneo Juggernaut Dark Souls Arena (Ganador: 250 JP)</h3></td>
-						<td><img src="img/evento3.jpg"><h3>Torneo Juggernaut Dark Souls Arena (Ganador: 250 JP)</h3></td>
-						<td><img src="img/evento3.jpg"><h3>Torneo Juggernaut Dark Souls Arena (Ganador: 250 JP)</h3></td>
-					</tr>
-					<tr>
-						<td><img src="img/evento3.jpg"><h3>Torneo Juggernaut Dark Souls Arena (Ganador: 250 JP)</h3></td>
-						<td><img src="img/evento3.jpg"><h3>Torneo Juggernaut Dark Souls Arena (Ganador: 250 JP)</h3></td>
-						<td><img src="img/evento3.jpg"><h3>Torneo Juggernaut Dark Souls Arena (Ganador: 250 JP)</h3></td>
-					</tr>
-				</table>
+			<header><div><span>Eventos finalizados</span></div></header>
+				<div>Hola</div>
 				<div class="pie_seccion"><a href="http://www.google.es">Ver más</a></div>
 			</div>
 		</div>

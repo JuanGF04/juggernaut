@@ -6,9 +6,8 @@
   <meta charset="utf-8">
   <style>
     #formlogin{
-      padding: 15px;
-      min-width:300px;
-      margin-right: 100px;
+      padding: 1%;
+      margin-right: 5%;
       border:2px solid rgba(200,0,0,1);
     }
     #claseformulario{
@@ -20,7 +19,6 @@
 
     #puntosPersonales{
       font-size: 200%;
-
     }
 
 
