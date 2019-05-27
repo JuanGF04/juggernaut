@@ -186,10 +186,9 @@
        ?>
        <script languaje="javascript">
          function borrarJuego(n){
-					 alert(n);
            var opcion = confirm("¿Estás seguro?");
            if(opcion == true){
-						 
+
              window.location.replace("http://localhost/juggernaut/public/borrarJuego?icodgame="+ n);
            }else{
              return false;
