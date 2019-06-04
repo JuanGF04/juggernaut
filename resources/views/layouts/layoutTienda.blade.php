@@ -54,7 +54,7 @@
 						echo "</div>";
 						//echo"</table>";
 					?>
-					<div class="pie_seccion"><a href="http://www.google.es">Ver más</a></div>
+					<div class="pie_seccion"><a href="http://localhost/juggernaut/public/mostrarJuegos?orden=1">Ver más</a></div>
 			</div>
 
 			<div class="seccion2">
@@ -85,18 +85,18 @@
 									}
 
 									echo "</div>";
-									//echo"</table>";
+							
 								?>
-				<div class="pie_seccion"><a href="http://www.google.es">Ver más</a></div>
+								<div class='pie_seccion'><a href='http://localhost/juggernaut/public/mostrarJuegos?orden=2'>Ver más</a></div>
 			</div>
 
 			<div class="seccion2">
-			<header><div><span>Descargables</span></div></header>
+			<header><div><span>Últimos lanzamientos</span></div></header>
 
 
 								<?php
 
-									$resultado = DB::table('games')->orderBy('popularidad', 'desc')->limit(15)->get();
+									$resultado = DB::table('games')->orderBy('fecha_lanzamiento', 'desc')->limit(15)->get();
 
 									//echo "<table border='1'>";
 									echo "<div id='container'>";
@@ -120,7 +120,7 @@
 									echo "</div>";
 									//echo"</table>";
 								?>
-				<div class="pie_seccion"><a href="http://www.google.es">Ver más</a></div>
+				<div class="pie_seccion"><a href="http://localhost/juggernaut/public/mostrarJuegos?orden=3">Ver más</a></div>
 			</div>
 		</div>
 

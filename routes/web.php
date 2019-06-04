@@ -28,3 +28,4 @@ Route::get("/adminJuegos","controllerMain@adminJuegos");
 Route::get("/añadirJuego","controllerMain@añadirJuego");
 Route::get("/borrarJuego","controllerMain@borrarJuego");
 Route::get("/crearfactura","controllerMain@crearfactura");
+Route::get("/mostrarJuegos","controllerMain@mostrarJuegos");

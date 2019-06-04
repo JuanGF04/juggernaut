@@ -102,17 +102,17 @@
       <form class="needs-validation" novalidate method="get" action="http://localhost/juggernaut/public/añadirJuego">
         <div class="form-group">
           <div class="col-sm-12">
-            <label for="name" id="labelForm">Nombre del juego</label>
+            <label for="name" id="labelForm">Nombre del juego*</label>
             <input class="form-control" type="text" name="nombre" required/><br/>
           </div>
 
           <div class="col-sm-12 mt-3">
-            <label for="name" id="labelForm">Precio</label>
+            <label for="name" id="labelForm">Precio*</label>
             <input class="form-control" type="number" name="price" required/><br/>
           </div>
 
           <div class="col-sm-12 mt-3">
-            <label for="name" id="labelForm">Precio Juggernaut Points</label>
+            <label for="name" id="labelForm">Precio Juggernaut Points*</label>
             <input class="form-control" type="number" name="JPprice" required/><br/>
           </div>
 
@@ -132,16 +132,16 @@
           </div>
 
           <div class="col-sm-12 mt-3">
-            <label for="name" id="labelForm">Desarrollador</label>
+            <label for="name" id="labelForm">Desarrollador*</label>
             <input class="form-control" type="text" name="desarrollador" required/><br/>
           </div>
 
           <div class="col-sm-12 mt-3">
-            <label for="name" id="labelForm">Género</label>
+            <label for="name" id="labelForm">Género*</label>
             <input class="form-control" type="text" name="genero" required/><br/>
           </div>
           <div class="col-sm-12 mt-3">
-            <label for="name" id="labelForm">Descripción</label>
+            <label for="name" id="labelForm">Descripción*</label>
             <input class="form-control" type="text" name="descripcion" required/><br/>
           </div>
 

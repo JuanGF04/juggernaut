@@ -69,6 +69,10 @@ class controllerMain extends Controller
     return view ("borrarJuego");
   }
 
+  public function mostrarJuegos(){
+    return view ("mostrarJuegos");
+  }
+
   public function crearfactura(){
     return view ("crearfactura");
   }
