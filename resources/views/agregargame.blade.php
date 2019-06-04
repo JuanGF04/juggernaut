@@ -7,7 +7,7 @@
 
   $icoduser = DB::table('users')->where('name', $nombre)->value('icoduser');
   $preciogame = DB::table('games')->where('icodgame', $idgame)->value('precio');
-  $preciogame2 = DB::table('games')->where('icodgame', $idgame)->value('precio_jp');
+  $preciogamejp = DB::table('games')->where('icodgame', $idgame)->value('precio_jp');
 
   $checkgame1 = DB::table('compra')->where('icoduser', $icoduser)->value('icodgame1');
   $checkgame2 = DB::table('compra')->where('icoduser', $icoduser)->value('icodgame2');
@@ -19,32 +19,61 @@
       $unidadesgame1 = DB::table('compra')->where('icoduser', $icoduser)->value('unidadesgame1');
       $realunidadesgame1 = $unidadesgame1+1;
       $preciogame = $realunidadesgame1*$preciogame;
+      $preciogamejp = $realunidadesgame1*$preciogamejp;
 
       DB::table('compra')
         ->updateOrInsert(
             ['icoduser' => $icoduser],
-            [ 'unidadesgame1'=> $realunidadesgame1, 'preciogame1'=> $preciogame]
+            [ 'unidadesgame1'=> $realunidadesgame1, 'preciogame1'=> $preciogame, 'preciojp1' => $preciogamejp]
             );
     }else{
       DB::table('compra')
         ->updateOrInsert(
             ['icoduser' => $icoduser],
-            [ 'icodgame1'=> $idgame,  'preciogame1' => $preciogame,'preciojp1' => $preciogame2,'unidadesgame1'=> 1]
+            [ 'icodgame1'=> $idgame,  'preciogame1' => $preciogame,'preciojp1' => $preciogamejp,'unidadesgame1'=> 1]
             );
     }
 
-  }else if($checkgame2 == null) {
+  }else if($checkgame2 == null || $idgame==$checkgame2) {
+    if($idgame == $checkgame2){
+
+      $unidadesgame2 = DB::table('compra')->where('icoduser', $icoduser)->value('unidadesgame2');
+      $realunidadesgame2 = $unidadesgame2+1;
+      $preciogame = $realunidadesgame2*$preciogame;
+      $preciogamejp = $realunidadesgame2*$preciogamejp;
+
+      DB::table('compra')
+        ->updateOrInsert(
+            ['icoduser' => $icoduser],
+            [ 'unidadesgame2'=> $realunidadesgame2, 'preciogame2'=> $preciogame, 'preciojp2' => $preciogamejp]
+            );
+    }else{
     DB::table('compra')
       ->updateOrInsert(
           ['icoduser' => $icoduser],
-          [ 'icodgame2'=> $idgame,  'preciogame2' => $preciogame, 'preciojp2' => $preciogame2 ]
+          [ 'icodgame2'=> $idgame,  'preciogame2' => $preciogame, 'preciojp2' => $preciogamejp, 'unidadesgame2'=> 1]
           );
-  }else if($checkgame3 == null){
+    }
+  }else if($checkgame3 == null || $idgame==$checkgame3){
+    if($idgame == $checkgame3){
+
+      $unidadesgame3 = DB::table('compra')->where('icoduser', $icoduser)->value('unidadesgame3');
+      $realunidadesgame3 = $unidadesgame3+1;
+      $preciogame = $realunidadesgame3*$preciogame;
+      $preciogamejp = $realunidadesgame3*$preciogamejp;
+
+      DB::table('compra')
+        ->updateOrInsert(
+            ['icoduser' => $icoduser],
+            [ 'unidadesgame3'=> $realunidadesgame3, 'preciogame3'=> $preciogame, 'preciojp3' => $preciogamejp]
+            );
+    }else{
     DB::table('compra')
       ->updateOrInsert(
           ['icoduser' => $icoduser],
-          [ 'icodgame3'=> $idgame,  'preciogame3' => $preciogame, 'preciojp3' => $preciogame2 ]
+          [ 'icodgame3'=> $idgame,  'preciogame3' => $preciogame, 'preciojp3' => $preciogamejp, 'unidadesgame3' => 1]
           );
+    }
   }else{
     echo "ya esta petao";
   }

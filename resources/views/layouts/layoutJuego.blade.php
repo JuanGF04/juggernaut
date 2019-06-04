@@ -71,12 +71,10 @@
 						echo "<div id = 'buttons'>";
 						if(isset($_SESSION['logueado'])){
 							if ($_SESSION['logueado']==false){
-								echo "<button type='button' id='disabledbutton' class='btn-success' onclick='añadirCesta()' disabled><span>Comprar $precio €</span></button>";
-								echo "<button type='button' id='disabledbutton' class='btn-danger' onclick='añadirCesta()' disabled><span>Comprar $precioJP JP<img src='img/jugger.ico'/></span></button>";
+								echo "<button type='button' id='disabledbutton' class='btn-success' onclick='añadirCesta()' disabled><span>Comprar $precio € | $precioJP JP</span></button>";
 								echo "<span>Para adquirir un videojuego es necesario iniciar sesión</span>";
 							}else{
-								echo "<button type='button' class='btn-success' onclick='añadirCesta()'><span>Comprar $precio €</span></button>";
-								echo "<button type='button' class='btn-danger' onclick='añadirCesta()'><span>Comprar $precioJP JP<img src='img/jugger.ico'/></span></button>";
+								echo "<button type='button' class='btn-warning' onclick='añadirCesta()'><span>Comprar $precio € | $precioJP JP</span></button>";
 							}
 						}
 						echo "</div>";

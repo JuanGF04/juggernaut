@@ -95,8 +95,8 @@ nav{
 	border: 2px solid black;
 	margin-left: 4.5%;
 	background-color:rgba(200,0,0,1);
-	position: sticky;
-	top:0px;
+	position: relative;
+
 
 }
 
@@ -376,6 +376,7 @@ footer{
 	width:100%;
 	background-color:black;
 	border-top: 2px solid red;
+
 	/*border-image-source: url("img/borde.png");
 	border-image-slice:15;
 	border-image-repeat: repeat;*/

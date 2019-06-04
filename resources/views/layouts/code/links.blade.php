@@ -109,35 +109,21 @@
     }
     #seccionjuego #caratula #buttons button{
       float:left;
-      margin-top: 2%;
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
       height: 10%;
-      width: 50%;
-      text-align:center;
     }
 
-    #seccionjuego #caratula #buttons button:nth-child(2){
-      float: left;
-    }
 
     #seccionjuego #caratula #buttons button span{
+      margin-left: 0px;
+      float: left;
+      width: 100%;
       font-size: 1.3vw;
       color: white;
-
-
     }
 
-    #seccionjuego #caratula #buttons button span img{
-      vertical-align: middle;
-      border: none;
-      float: none;
-      width: 15%;
-      height: 50%;
-    }
-
-    #seccionjuego #caratula #buttons button:nth-child(2) span{
-      height: 70%;
-
-    }
 
 
 

@@ -27,3 +27,4 @@ Route::get("/borrargame","controllerMain@borrargame");
 Route::get("/adminJuegos","controllerMain@adminJuegos");
 Route::get("/añadirJuego","controllerMain@añadirJuego");
 Route::get("/borrarJuego","controllerMain@borrarJuego");
+Route::get("/crearfactura","controllerMain@crearfactura");
