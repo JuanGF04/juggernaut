@@ -30,18 +30,7 @@
 		</nav>
 
 		<div class="main" id="seccionjuego">
-			<?php
-				if(isset($_SESSION['logueado'])){
-					if ($_SESSION['logueado']==false){
-			?>
 
-      			<?php
-      		}else{
-
-      		}
-
-      	}
-      	?>
 
           <?php
             $icodgame = $_GET['icodgame'];

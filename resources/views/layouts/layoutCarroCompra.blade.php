@@ -263,7 +263,7 @@
 		}
        ?>
 
-			 <div id = "cajaDinero">AJEJE</div>
+			 <div id = "cajaDinero">Esta operación está aún inactiva debido a temas legales, disculpe las molestias :(</div>
 			 <div id = "cajaPuntos">
 				 <?php
 
@@ -309,7 +309,7 @@
 		function validar(){
 
 			if(<?=$resultadoglobal?><0){
-				alert('No tienes pasta pringao');
+				alert('No tienes suficientes Juggernaut Points');
 			}else{
 				var ok = confirm('Estás seguro?');
 				if(ok)
